@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AirPods Pro 2 2nd Gen</title>
+    <link rel="icon" href="img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="index.html#catalogo">Catálogo</a></li>
+                <li><a href="index.html#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="detalles-producto">
+            <img src="img/product2.webp" alt="Audífono Modelo 1">
+            <div class="info-producto">
+                <h2>AirPods Pro 2 2nd Gen</h2>
+                <p class="precio">Precio: $60,000.00</p>
+                <ul class="caracteristicas">
+                    <li><strong>Conectividad:</strong> Bluetooth 5.0</li>
+                    <li><strong>Diseño:</strong> In-Ear, con ajuste personalizado</li>
+                    <li><strong>Funciones:</strong> Cancelación activa de ruido, modo de transparencia, HAC (Control por
+                        voz)</li>
+                    <li><strong>Duración de la batería:</strong> Hasta 4.5 horas con uso continuo</li>
+                    <li><strong>Resistencia:</strong> Resistente al sudor y al agua (IPX4)</li>
+                </ul>
+                <form class="formulario-compra" onsubmit="event.preventDefault(); sendToWhatsApp();">
+                    <div class="form-group">
+                        <label for="cantidad">Cantidad:</label>
+                        <input type="number" id="cantidad" min="1" value="1" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="metodo-pago">Método de Pago:</label>
+                        <select id="metodo-pago" required>
+                            <option value="" disabled selected>Seleccione una opción</option>
+                            <option value="Bancolombia">Bancolombia</option>
+                            <option value="Efecty">Efecty</option>
+                            <option value="Nequi">Nequi</option>
+                        </select>
+                    </div>
+                    <button class="btn" onclick="handlePurchase('AirPods Pro 2 2nd Gen' ,'60,000.00')">Comprar</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Vouto Eterne. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>

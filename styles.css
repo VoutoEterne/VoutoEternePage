@@ -1,0 +1,336 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+h1, h2, h3 {
+    color: #222;
+}
+
+/* Header (Portada) */
+.hero {
+    background: linear-gradient(45deg, black, #333);
+    color: #fff;
+    text-align: center; 
+    padding: 20px 5px; 
+    position: relative; 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+    overflow: hidden; 
+}
+
+.hero img {
+    max-height: 200px; /* Ajusta la altura del logo */
+    height: auto; /* Mantiene proporciones */
+    width: auto; /* Evita deformaciones */
+}
+
+.hero h1 {
+    font-size: 3rem; 
+    margin-bottom: 15px; 
+    font-weight: bold; 
+    text-transform: uppercase; 
+    letter-spacing: 2px; 
+}
+
+.hero p {
+    font-size: 1.5rem; 
+    margin-bottom: 25px; 
+    max-width: 600px; 
+    line-height: 1.8; 
+}
+
+.hero .btn {
+    padding: 12px 30px; 
+    background-color: #ff9900; 
+    color: #fff; 
+    text-decoration: none; 
+    font-size: 1.2rem; 
+    border-radius: 8px; 
+    transition: background-color 0.3s ease; 
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3); 
+}
+
+.hero .btn:hover {
+    background-color: #cc7a00; 
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5); 
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2rem; 
+    }
+    .hero p {
+        font-size: 1rem; 
+    }
+    .hero .btn {
+        font-size: 1rem; 
+        padding: 10px 20px; 
+    }
+    .hero img {
+        max-height: 50px; /* Ajusta el tamaño del logo en pantallas pequeñas */
+    }
+
+}
+
+
+/* Navigation */
+nav ul {
+    display: flex;
+    list-style: none;
+    background-color: #222;
+    padding: 10px;
+    margin: 0;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    
+}
+
+nav ul li a:hover {
+    text-decoration: none;
+}
+
+/* Sections */
+section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+#catalogo .productos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+#catalogo .producto {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 250px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#catalogo .producto img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+#catalogo .producto h3 {
+    white-space: nowrap; 
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+    max-width: 100%; 
+    font-size: 16px; 
+}
+
+
+#catalogo .producto p {
+    margin: 10px 0;
+    color: #777;
+}
+
+#catalogo .producto .btn {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+#catalogo .producto .btn:hover {
+    background-color: #0056b3;
+}
+
+/* Contact Section */
+#contacto ul {
+    list-style: none;
+    padding: 0;
+}
+
+#contacto ul li {
+    margin: 10px 0;
+    font-size: 1rem;
+}
+
+#contacto ul li a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+#contacto ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Product Details */
+.detalles-producto {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+.detalles-producto img {
+    max-width: 400px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+    .detalles-producto img {
+        max-width: 90%; /* Reduce el ancho en dispositivos pequeños */
+        margin: 20px auto; /* Añade margen en dispositivos móviles */
+    }
+}
+
+.info-producto {
+    max-width: 500px;
+    text-align: left;
+}
+
+.info-producto h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.info-producto .precio {
+    font-size: 1.5rem;
+    color: #007bff;
+    margin-bottom: 15px;
+}
+
+.info-producto p {
+    margin: 10px 0;
+    color: #555;
+}
+
+/* Formulario de Compra */
+.formulario-compra {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.formulario-compra .form-group {
+    margin-bottom: 15px;
+}
+
+.formulario-compra label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.formulario-compra input, .formulario-compra select {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.formulario-compra .btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.formulario-compra .btn:hover {
+    background-color: #0056b3;
+}
+
+header .logo {
+    height: 300px;
+    margin-right: 10px;
+}
+
+#catalogo .producto img {
+    width: 250%; 
+    height: 250px; 
+    object-fit: cover; 
+    border-radius: 8px;
+}
+
+#catalogo .producto a {
+    text-decoration: none; 
+    color: inherit; 
+}
+
+#catalogo .producto img {
+    cursor: pointer; 
+}
+
+#catalogo .producto h3:hover {
+    text-decoration: underline; 
+}
+
+/* Lista de características */
+.caracteristicas {
+    list-style: none; 
+    padding: 0; 
+    margin: 20px 0; 
+    font-family: Arial, sans-serif; 
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.caracteristicas li {
+    background-color: #f9f9f9; 
+    border: 1px solid #ddd; 
+    border-radius: 5px; 
+    padding: 5px; 
+    margin-bottom: 5px; 
+    display: flex; 
+    align-items: center;
+}
+
+.caracteristicas li strong {
+    color: #333; 
+    font-weight: bold; 
+    margin-right: 10px; 
+}
+
+.caracteristicas li::before {
+    content: "✔"; 
+    color: #4caf50; 
+    font-weight: bold;
+    margin-right: 10px; 
+}
